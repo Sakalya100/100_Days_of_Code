@@ -1,7 +1,9 @@
 Problem Solved: Power of Two
+
 Problem Link: [Problem](https://lnkd.in/dTCpuZAk)
 
 Approaches:
+
 📌𝐍𝐚𝐢𝐯𝐞 𝐀𝐩𝐩𝐫𝐨𝐚𝐜𝐡
 
 We can iterate through the entire range of [0,30] and for each number raise it to the power of 2. We check if that power of two is equal to the number n given or not. As per our result, we return our answer.
@@ -17,5 +19,7 @@ We reuse the powers calculated in previous steps. For example 2^3 = 2^2 x 2. So 
 📌𝐔𝐬𝐢𝐧𝐠 𝐁𝐢𝐭 𝐌𝐚𝐧𝐢𝐩𝐮𝐥𝐚𝐭𝐢𝐨𝐧
 
 All the powers of 2 are even numbers and will only have 1 set bit.
+
 We will use this property to find if a number is a power of 2.
+
 Using the 𝐧 & (𝐧-𝟏) trick. If n is an even number, 𝐧 & (𝐧-𝟏) will result in 0 as the answer. Otherwise, the answer will be 1.
